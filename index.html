@@ -22,6 +22,48 @@
     <script src="assets/js/modernizr-2.6.2.min.js"></script>
   </head>
   <body>
+  <nav class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Seattle Meshnet</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="https://fund.meshwith.me/"><span class="glyphicon glyphicon-heart-empty"></span>&nbsp;Donate</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-globe"></span>&nbsp;Map <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#nodes">Active Nodes</a></li>
+              <li><a href="#coverage">Coverage</a></li>
+              <li class="divider"></li>
+              <li><a href="https://seattlemeshnet-nodeshot.appspot.com/">Nodeshot</a></li>
+            </ul>
+          </li>
+          <li class=""><a href=""><span class="glyphicon glyphicon-signal"></span>&nbsp;Hardware</a></li>
+          <li class=""><a href=""><span class="glyphicon glyphicon-transfer"></span>&nbsp;Software</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>&nbsp;Social <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://twitter.com/SeattleMeshnet">Twitter</a></li>
+              <li><a href="http://www.reddit.com/r/seattlemeshnet">Reddit</a></li>
+              <li><a href="https://plus.google.com/+SeattleMeshnet">Google+</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-12">
@@ -36,15 +78,24 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="w500">
-            <a href="" class="btn btn-lg btn-seattle shrink" id="learn"><span class="glyphicon glyphicon-book"></span>&nbsp;Learn More</a>
-            <a href="https://fund.meshwith.me/" class="btn btn-lg btn-seattle shrink" id="donate"><span class="glyphicon glyphicon-heart-empty"></span>&nbsp;Donate</a>
-            <a href="" class="btn btn-lg btn-seattle shrink" id="map"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;Map</a>
+            <div class="visible-xs">
+              <a href="https://fund.meshwith.me/" class="btn btn-lg btn-seattle shrink" id="donate"><span class="glyphicon glyphicon-heart-empty"></span>&nbsp;Donate</a>
+              <a href="" class="btn btn-lg btn-seattle shrink" id="map"><span class="glyphicon glyphicon-globe"></span>&nbsp;Map</a>
+            </div>
           </div>
+        </div>
+      </div>
+      <div class="row visible-xs">
+        <div class="col-xs-12">
+          <a href="https://twitter.com/SeattleMeshnet" class="btn btn-lg btn-seattle shrink" id="twitter">Twitter</a>
+          <a href="http://www.reddit.com/r/seattlemeshnet" class="btn btn-lg btn-seattle shrink" id="donate">Reddit</a>
+          <a href="https://plus.google.com/+SeattleMeshnet" class="btn btn-lg btn-seattle shrink" id="map">Google+</a>
         </div>
       </div>
     </div>
     <script src="assets/js/jquery-1.10.1.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.fittext.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
