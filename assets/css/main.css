@@ -3,10 +3,51 @@
 html, body {
 	margin: 0;
 	padding: 0;
+	height: 100%;
 }
 
 body {
-	
+	background-color: #000;
+	background-image: url(../img/Space_Needle.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
 }
 
-/* */
+/* Special Headers */
+
+h1.title {
+	background-color: rgba(0,0,0,.2);
+	color: #FFF;
+	font-size: 64px;
+	padding: 5px;
+	display: inline-block;
+	font-weight: 300;
+	width: 500px;
+	text-align: center;
+}
+
+h5.description {
+	color: #FFF;
+	margin: 0;
+	padding: 5px;
+	background-color: rgba(0,0,0,.2);
+	display: inline-block;
+	width: 500px;
+	text-align: center;
+}
+
+
+@media(max-width: 768px) {
+	h1.title, h5.description {
+		display: block;
+		width: auto;
+	}
+}
+
+@media(max-width: 521px) {
+
+}
