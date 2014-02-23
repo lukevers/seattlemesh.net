@@ -21,29 +21,34 @@ body {
 /* Special Headers */
 
 h1.title {
-	color: #333;
+	color: #222;
 	font-weight: 300;
 	text-align: center;
 }
 
 h5.description {
-	color: #FFF;
+	color: #222;
 	margin: 0;
 	padding: 5px;
 	text-align: center;
-	display: none;
+	font-size: 20px;
 }
 
 /* Buttons */
 
 .btn.btn-seattle {
-	background-color: rgba(0,0,0,.2);
+	background-color: #222;
 	color: #FFF;
 	margin-top: 10px;
+	width: 100%;
 }
 
 .btn.btn-seattle span {
 	font-size: 14px;
+}
+
+.space {
+	height: 10px;
 }
 
 /* Navbar */
@@ -61,21 +66,13 @@ a span {
 /* Media Queries */
 
 @media(max-width: 768px) {
-	h1.title, h5.description {
-		display: block;
-		width: auto;
-	}
-
-	.btn.btn-seattle {
-		width: 100%;
-	}
-
-	.w500 {
-		width: auto;
-		text-align: center;
+	h5.description {
+		font-size: 16px;
 	}
 }
 
 @media(max-width: 400px) {
-	
+	h5.description {
+		font-size: 14px;
+	}
 }
