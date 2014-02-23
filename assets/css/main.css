@@ -40,14 +40,37 @@ h5.description {
 	text-align: center;
 }
 
+/* Buttons */
+
+.btn.btn-seattle {
+	background-color: rgba(0,0,0,.2);
+	color: #FFF;
+	margin-top: 10px;
+}
+
+.btn.btn-seattle span {
+	font-size: 14px;
+}
+
+.w500 {
+	width: 500px;
+}
+
+/* Media Queries */
 
 @media(max-width: 768px) {
 	h1.title, h5.description {
 		display: block;
 		width: auto;
 	}
+
+	.w500 {
+		width: auto;
+	}
 }
 
-@media(max-width: 521px) {
-
+@media(max-width: 400px) {
+	.btn.btn-seattle {
+		width: 100%;
+	}
 }

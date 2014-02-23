@@ -1,3 +1,5 @@
 $(function() {
-	// Do stuff
+	$('#learn').bind('click', function() {
+		// TODO
+	});
 });
