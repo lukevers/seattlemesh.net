@@ -20,6 +20,10 @@
     <link rel="stylesheet" href="assets/css/main.css">
     
     <script src="assets/js/modernizr-2.6.2.min.js"></script>
+    <script src="assets/js/jquery-1.10.1.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.fittext.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-inverse" role="navigation">
@@ -31,20 +35,20 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Seattle Meshnet</a>
+          <a class="navbar-brand" href="/">Seattle Meshnet</a>
 	</div>
 	
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li class="active"><a href="/">Home</a></li>
             <li><a href="https://fund.meshwith.me/"><span class="glyphicon glyphicon-heart-empty"></span>&nbsp;Donate</a></li>
-            <li><a href=""><span class="glyphicon glyphicon-signal"></span>&nbsp;Hardware</a></li>
-            <li><a href=""><span class="glyphicon glyphicon-transfer"></span>&nbsp;Software</a></li>
+            <li><a href="/hardware.php"><span class="glyphicon glyphicon-signal"></span>&nbsp;Hardware</a></li>
+            <li><a href="/software.php"><span class="glyphicon glyphicon-transfer"></span>&nbsp;Software</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-globe"></span>&nbsp;Map <b class="caret"></b></a>
               <ul class="dropdown-menu">
-		<li><a href="#nodes">Active Nodes</a></li>
-		<li><a href="#coverage">Coverage</a></li>
+		<li><a href="/map.php">Active Nodes</a></li>
+		<li><a href="/coverage.php">Coverage</a></li>
 		<li class="divider hidden-xs"></li>
 		<li><a href="https://seattlemeshnet-nodeshot.appspot.com/">Nodeshot</a></li>
               </ul>

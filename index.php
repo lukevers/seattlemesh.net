@@ -1,4 +1,4 @@
-  <?php require('header.php') ?>
+  <?php require('header.php'); ?>
     
     <div class="container-fluid">
       <div class="row">
@@ -31,4 +31,10 @@
       </div>
     </div>
 
-      <?php require('footer.php') ?>
+    <script>
+      $(function() {
+        $("h1.title").fitText();
+      });
+    </script>
+
+    <?php require('footer.php'); ?>
